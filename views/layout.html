@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title><%= title %> - MyBlog</title> 
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' /> 
+    <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css' /> 
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/ibox.css' />
+    <script src="/javascripts/jquery-2.1.0.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <script src="/javascripts/jquery.ibox.js"></script>
+    <script src="/javascripts/Utils.js"></script>
+    <script src="/javascripts/myUI.js"></script>
+    <script src="/javascripts/blogMain.js"></script>
+  </head> 
+  <body> 
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+     <div class="container">
+        <ul class="nav navbar-nav">
+          <li <%if(title=="首页"){%> class="active" <%}%>><a href="/">首页</a></li>
+          <li <%if(title=="日志"){%> class="active" <%}%>><a href="/blog">日志</a></li>
+          <li <%if(title=="相册"){%> class="active" <%}%>><a href="/album">相册</a></li>
+          <li <%if(title=="音乐"){%> class="active" <%}%>><a href="/music">音乐</a></li>
+          <li <%if(title=="收藏"){%> class="active" <%}%>><a href="/collection">收藏</a></li>
+          <li <%if(title=="博友"){%> class="active" <%}%>><a href="/friends">博友</a></li>
+          <li <%if(title=="关于我"){%> class="active" <%}%>><a href="/profile">关于我</a></li>
+          <%if(!user){%><li><a href="javascript:void(0)" id="loginBtn">登录</a></li><%} else {%>
+          <li><a href="/loginout">退出</a></li>
+          <%}%>
+        </ul>
+     </div>
+    </nav>
+    <div id="container" class="container">
+      <%- body%>
+      <footer>
+         <p>MyBlog©2014</p>
+         <p>留言邮箱：1248198090@qq.com</p>
+      </footer>
+    </div>
+    <div id="task" class="task"></div>
+  </body>
+</html>

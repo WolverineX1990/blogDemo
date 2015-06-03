@@ -1,0 +1,70 @@
+body { 
+	padding-top: 70px; 
+}
+
+.navbar-inverse {
+    height: 40px;
+    min-height:40px;
+}
+
+.navbar-inverse li a{
+	padding-top: 10px;
+	height: 40px;
+}
+
+.info ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.photo a img{
+	height: 400px;
+}
+
+.dailyinfo{
+   margin-bottom: 40px;
+}
+
+.visitor
+{
+	margin: 10px;
+}
+
+.visitor a img{
+	height:42px;
+	width: 42px;
+}
+
+.visitor-photo
+{
+	float: left;
+}
+
+.visitor-info{
+	margin-left: 52px;
+}
+
+.blog-frend
+{
+	margin: 15px;
+}
+
+.blog-frend img{
+	height: 60px;
+	width: 60px;
+}
+
+.blog-frend div{
+	width: 60px;
+	height: 20px;
+	text-align: center;
+}
+
+table .name{
+	width: 60px;
+}
+
+table .value{
+	width: 180px;
+}

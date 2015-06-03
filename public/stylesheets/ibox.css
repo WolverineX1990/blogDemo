@@ -1,0 +1,70 @@
+#iBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: none;	
+}
+#iBox .iBox_popup {
+	position: relative;
+	padding: 10px;
+	background: #ddd;
+}
+#iBox table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+#iBox .iBox_body {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#iBox .iBox_title {
+	padding: 0px 0px 0px 10px;
+	height: 28px;
+	line-height: 28px;
+	color: #444;
+	border-bottom: 1px solid #ccc;
+	background: #f0f0f0;
+}
+#iBox .iBox_title span {
+	float: left;
+	font-weight: bold;
+}
+#iBox .iBox_title i.iBox_close {
+	float: right;
+	margin: 7px 10px 0px 0px;
+	height: 14px;
+	width: 14px;
+	cursor: pointer;
+	background: url("../images/ibox-close.png");
+}
+#iBox .iBox_title i.on {
+	background-position: 0 -14px;
+}
+#iBox #iBox_Content {
+	padding: 10px;
+}
+#iBox_overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+.iBox_hide {
+	z-index: -100;
+}
+.iBox_overlay_bg {
+	background-color: #444;
+	z-index: 1;
+}
+#iBox .iBox_load {
+	width: 300px;
+}
+#iBox #iBox_loading {
+	margin: 0 auto;
+	width: 300px;
+	height: 60px;
+	line-height:60px;
+	text-align:center;	
+}

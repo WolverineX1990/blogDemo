@@ -1,0 +1,2 @@
+var content;
+var contentHtml;
